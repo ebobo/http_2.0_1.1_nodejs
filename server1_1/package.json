@@ -1,0 +1,12 @@
+{
+  "name": "server_1_1",
+  "version": "0.0.1",
+  "description": "image server server http 1.1",
+  "author": "qi xu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

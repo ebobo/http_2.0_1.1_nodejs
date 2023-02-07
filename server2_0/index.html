@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Http 2.0</title>
+  </head>
+  <body>
+    <h1>Http 2.0 server</h1>
+    <table id="img" border="0" cellpadding="1" cellspacing="0"></table>
+
+    <script>
+      const table = document.getElementById('img');
+
+      for (let col = 1; col <= 10; col++) {
+        const tr = document.createElement('tr');
+
+        for (let row = 1; row <= 12; row++) {
+          const td = document.createElement('td');
+          const img = document.createElement('img');
+          img.width = 105;
+          img.height = 65;
+          img.src = `img/image${row.toString()}x${col.toString()}.jpg`;
+          td.appendChild(img);
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+    </script>
+  </body>
+</html>
